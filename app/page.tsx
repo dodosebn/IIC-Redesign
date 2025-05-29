@@ -2,12 +2,14 @@
 
 import Header from "./components/header";
 import HorAnimation from "./components/horAnimation";
+import Journey from "./components/Journey";
 
 export default function Home() {
   return (
     <div>
 <Header />
 <HorAnimation />
+<Journey />
     </div>
   );
 }
