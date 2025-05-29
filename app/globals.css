@@ -25,3 +25,18 @@ body {
   color: var(--foreground);
   font-family: 'Lato', 'Playfair';
 }
+@layer {
+    .animate-infinite-scroll {
+    animation: infinite-scroll 20s linear infinite;
+    display: inline-block;
+  }
+  @keyframes infinite-scroll {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+}
