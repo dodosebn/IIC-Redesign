@@ -4,6 +4,7 @@ import React, { useEffect } from 'react'
 import HeaderBg from '@/public/images/slide-1.jpg'
 import LearnMore from '../utils/learnMore'
 import Image from 'next/image'
+import SideSocial from './sideSocial';
 
 const Header = () => {
   useEffect(() => {
@@ -102,6 +103,8 @@ const Header = () => {
 
   return (
     <div className="relative min-h-screen flex flex-col items-center justify-center text-center p-8 sm:p-12 overflow-hidden">
+             <SideSocial />
+
       {/* Background Image */}
       <Image 
         src={HeaderBg} 
