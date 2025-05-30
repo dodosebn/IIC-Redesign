@@ -23,7 +23,7 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: 'Lato', 'Playfair';
+  font-family: 'Lato', 'Playfair' sans-serif;
 }
 @layer {
     .animate-infinite-scroll {

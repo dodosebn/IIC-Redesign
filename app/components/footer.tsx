@@ -1,5 +1,7 @@
 'use client';
 import React, { useState } from 'react';
+import TransitionLink from '../utils/transitionLink';
+import path from 'path';
 
 const Footer = () => {
     const [email, setEmail] = useState('');
@@ -25,13 +27,15 @@ const Footer = () => {
                 <div 
                     className='flex justify-center'>
                     <ul className='grid grid-cols-2 gap-4'>
-                        {["Home", "Journey"].map((item, index) => (
-                            <li className="relative group" key={index} >
-                                <span className="hover:text-green-400 cursor-pointer">
-                                    {item}
+                        {[{name: 'Home', id: 1, path: '#Home'}, {name: 'Journey', id: 2, path: '#Journey'}].map((item) => (
+                            <li className="relative group" key={item.id} >
+                                <TransitionLink href={item.path}>
+                                <span className="hover:text-blue-400 cursor-pointer ">
+                                    {item.name}
                                 </span>
+                                </TransitionLink>
                                 <span 
-                                    className="absolute bottom-0 left-0 w-0 h-0.5 bg-green-400"
+                                    className="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-400"
                                    
                                 />
                             </li>
@@ -47,8 +51,8 @@ const Footer = () => {
                             type="email" 
                             value={email}
                             onChange={handleEmailChange}
-                            placeholder='Get updates' 
-                            className='px-4 py-2 rounded-l-full w-full focus:border-2 focus:border-[#fff] focus:outline-none'
+                            placeholder="Stay informed – enter your email" 
+                            className='px-4 py-2 rounded-l-full w-full border-1 border-[#fff] focus:outline-none'
                             required
                         />
                         <button 
