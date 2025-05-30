@@ -38,5 +38,41 @@ body {
     transform: translateX(-50%);
   }
 }
+        @keyframes lineGrow {
+          0% { transform: scaleY(0); }
+          100% { transform: scaleY(1); }
+        }
 
+        @keyframes scanDown {
+          0% { transform: translateY(-100vh); }
+          100% { transform: translateY(100vh); }
+        }
+
+        @keyframes pulseOut {
+          0% { transform: scale(0); opacity: 1; }
+          70% { opacity: 0.8; }
+          100% { transform: scale(10); opacity: 0; }
+        }
+
+        @keyframes fadeIn {
+          from { opacity: 0; }
+          to { opacity: 1; }
+        }
+
+        .animate-in {
+          opacity: 1;
+          transition: opacity 0.5s ease-out;
+        }
+
+        .animate-fadeIn {
+          animation: fadeIn 0.8s ease-out forwards;
+        }
+
+        .light-theme .intro-animation {
+          background: rgba(255, 255, 255, 0.95);
+        }
+
+        .light-theme .intro-animation div {
+          background: rgba(0, 0, 0, 0.2);
+        }      
 }

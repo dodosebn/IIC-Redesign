@@ -16,7 +16,9 @@ const HorAnimation = () => {
                   key={ndx} 
                   className='inline-flex items-center'
                 >
-                  <span className='inline-block px-3 py-1.5 bg-gray-50 rounded-full text-sm md:text-base font-medium text-gray-800 hover:bg-blue-50 hover:text-blue-600 transition-all duration-300 shadow-[0_1px_2px_rgba(0,0,0,0.05)]'>
+                  <span className='inline-block px-3 py-1.
+                  5 bg-gray-50 rounded-full text-sm md:text-base font-medium text-gray-800
+                   hover:bg-blue-50 hover:text-blue-600 transition-all duration-300 shadow-[0_1px_2px_rgba(0,0,0,0.05)]'>
                     {item}
                   </span>
                   {ndx < duplicatedItems.length - 1 && (

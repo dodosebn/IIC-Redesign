@@ -27,7 +27,7 @@ const Footer = () => {
                 <div 
                     className='flex justify-center'>
                     <ul className='grid grid-cols-2 gap-4'>
-                        {[{name: 'Home', id: 1, path: '#Home'}, {name: 'Journey', id: 2, path: '#Journey'}].map((item) => (
+                        {[{name: 'Home', id: 1, path: '#Home'}, {name: 'Journey', id: 2, path: '#journey'}].map((item) => (
                             <li className="relative group" key={item.id} >
                                 <TransitionLink href={item.path}>
                                 <span className="hover:text-blue-400 cursor-pointer ">

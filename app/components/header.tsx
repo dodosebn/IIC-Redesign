@@ -64,7 +64,7 @@ const Header = () => {
       }
     }
 
-    const particles: Particle[] = Array.from({ length: 50 }, () => new Particle())
+      const particles: Particle[] = Array.from({ length: 1000 }, () => new Particle()) 
 
     let animationId: number
     const animate = () => {
@@ -102,7 +102,7 @@ const Header = () => {
 
 
   return (
-    <div className="relative min-h-screen flex flex-col items-center justify-center text-center p-8 sm:p-12 overflow-hidden">
+    <div id='#Home' className="relative min-h-screen flex flex-col items-center justify-center text-center p-8 sm:p-12 overflow-hidden">
              <SideSocial />
 
       {/* Background Image */}
