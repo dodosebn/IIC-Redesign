@@ -125,7 +125,7 @@ const Header = () => {
         </p>
 
         <div className="py-3">
-          <LearnMore path='/' />
+          <LearnMore path="#journey"  />
         </div>
 
         <p className="text-base sm:text-lg text-[#f1f1f1]/90 italic">

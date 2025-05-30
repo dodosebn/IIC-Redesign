@@ -3,7 +3,7 @@ import React from 'react'
 const Journey = () => {
   return (
     
-    <div className="max-w-4xl mx-auto px-5 md:px-10 py-8 text-center md:text-left">
+    <div className="max-w-4xl mx-auto px-5 md:px-10 py-8 text-center md:text-left" id="journey">
       <h1 className="text-4xl md:text-5xl font-bold mb-6 text-center">JOURNEY</h1>
       
       <div className="mb-10">
